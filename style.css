@@ -17,7 +17,7 @@ ul li {
 }
 
 body {
-    /* background-color: #edeef6; */
+    background-color: #00111C;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -26,16 +26,26 @@ body {
     margin: 0;
 }
 
+.main__container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
 .btn__group {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    gap: 50px;
 }
 
 button {
-    background-color: #47a386;
-    border: 0;
+    width: 200px;
+    height: 70px;
+    background-color: #3765F4;
+    border: none;
     border-radius: 5px;
     color: #fff;
     padding: 10px 25px;
@@ -46,66 +56,63 @@ button {
 
 .container {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: column;
-    border: 2px solid red;
+    gap: 30px;
 }
 
 .modal__container {
-    margin: 0 20px;
-    background-color: rgba(0, 0, 0, 0.3);
-    /* display: flex;
-    align-items: center;
-    justify-content: center; */
-    /* position: fixed; */
     pointer-events: none;
     opacity: 0;
     transition: 0.7s;
 }
 
 .modal__container2 {
-    margin: 0 20px;
-    background-color: rgba(0, 0, 0, 0.3);
-    /* display: flex;
-    align-items: center;
-    justify-content: center; */
-    /* position: fixed; */
+    pointer-events: none;
+    opacity: 0;
+    transition: 0.7s;
+}
+
+.modal__container3 {
     pointer-events: none;
     opacity: 0;
     transition: 0.7s;
 }
 
 .modal {
-    margin: 10px 0;
-    background: #fff;
-    width: 600px;
-    max-width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 5px;
-    padding: 30px 50px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     text-align: center;
 }
 
 .modal2 {
-    margin: 10px 0;
-    background: #fff;
-    width: 600px;
-    max-width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 5px;
-    padding: 30px 50px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.modal3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
     text-align: center;
 }
 
 .item {
-    width: 100px;
-    height: 100px;
+    background-color: transparent;
+    border: 2px solid #011827;
+    border-radius: 10px;
+    text-align: justify;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    overflow: hidden;
+    margin: 0.5rem;
 }
 
 .item img {
@@ -120,7 +127,12 @@ button {
     pointer-events: auto;
 }
 
-.modal__container.show1 {
+.modal__container2.show1 {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modal__container3.show3 {
     opacity: 1;
     pointer-events: auto;
 }
